@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/attendance.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Management System</h1>
+    <div>
+      <label for="lessonSelect">Select Lesson:</label>
+      <select id="lessonSelect" onchange="loadAttendance()">
+        <option value="101">Math (101)</option>
+        <option value="102">Science (102)</option>
+        <option value="103">English (103)</option>
+      </select>
+
+      <label for="dateSelect">Select Date:</label>
+      <input type="date" id="dateSelect" onchange="loadAttendance()">
+    </div>
+
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Edit Status</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceBody">
+        <!-- Attendance records will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+  <button id="updateAttendanceButton" onclick="goToHomePage()">Update Attendance</button>
+</body>
+</html>
