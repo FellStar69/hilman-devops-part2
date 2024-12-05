@@ -12,7 +12,7 @@ const dbPath = path.join(__dirname, "utils/db.json");
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static("./instrumented"));
+app.use(express.static("instrumented"));
 
 // Import leave application routes from leaveapp.js
 const leaveAppRoutes = require("./util/leaveapp");
@@ -34,7 +34,7 @@ app.use("/", createStudentRoute);
 
 // Default route to serve the main HTML file
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/instrumented/", "index.html"));
+  res.sendFile(path.join(__dirname, "instrumented", "index.html"));
 });
 
 // Endpoint to get attendance for a specific lesson

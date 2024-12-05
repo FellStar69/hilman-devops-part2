@@ -4,6 +4,7 @@
   "description": "This is a group project for the DVOPS subject. Group members: Daryl, Hilman, Kenneth, Xave",
   "main": "index.js",
   "scripts": {
+    "backend-test": "nyc --nycrc-path .nycrc-backend mocha",
     "frontend-instrument": "xcopy public instrumented /I /E /Y & nyc instrument public instrumented",
     "frontend-test": "rmdir -r .nyc_output & nyc --nycrc-path .nycrc-frontend cypress run"
   },
@@ -11,12 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cypress/code-coverage": "^3.13.8",
     "body-parser": "^1.20.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "cors": "^2.8.5",
-    "cypress": "^13.16.1",
     "express": "^4.21.1",
     "fs": "^0.0.1-security",
+    "mocha": "^11.0.1",
     "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nyc": "^17.1.0"
   }
 }
