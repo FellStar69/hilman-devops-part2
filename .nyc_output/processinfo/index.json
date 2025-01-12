@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"processes":{"4b270c33-dea4-4487-b616-be6c46f82c31":{"parent":null,"children":[]}},"files":{"E:\\DEVOPS\\PART 2\\hilman-devops-part2\\test\\backendtest.js":["4b270c33-dea4-4487-b616-be6c46f82c31"]},"externalIds":{}}
+=======
+{"processes":{"87624b2b-e1cb-4c77-bc1c-7c08cd3a8490":{"parent":null,"children":["e12a7509-649b-430e-baa4-8f37b98f42a6"]},"e12a7509-649b-430e-baa4-8f37b98f42a6":{"parent":"87624b2b-e1cb-4c77-bc1c-7c08cd3a8490","children":[]}},"files":{},"externalIds":{}}
+>>>>>>> test-frontend

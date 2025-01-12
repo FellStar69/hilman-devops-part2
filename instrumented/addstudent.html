@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DVOPS - Student Management Web App</title>
+    <style>
+        /* Body and background styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('css/wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            /* Ensures the background fills the full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Container styling */
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            /* Translucent white */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            /* Adds a blur effect */
+            text-align: center;
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 2em;
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        /* Form styling */
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ccc;
+            text-align: left;
+        }
+
+        form input[type="number"],
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #555;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        /* Button styling */
+        form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Response message styling */
+        #responseMessage {
+            margin-top: 20px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Management Application</h1>
+        <p>In this application, teachers can mark attendance, manage students, and handle class information.</p>
+
+        <!-- Form for creating a new student -->
+        <h2>Add a New Student</h2>
+        <form id="createStudentForm">
+            <label for="studentID">Student ID:</label>
+            <input type="number" id="studentID" name="studentID" required>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <button type="submit">Create Student</button>
+        </form>
+
+        <!-- Display response message -->
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="/public/createStudentApp.js"></script>
+</body>
+
+</html>

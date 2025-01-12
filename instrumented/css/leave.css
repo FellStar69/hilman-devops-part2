@@ -1,0 +1,90 @@
+/* Body and background styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+/* Container for the leave form */
+#leaveFormContainer {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Translucent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    /* Adds a blur effect */
+}
+
+/* Leave form styling */
+#leaveForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: left;
+}
+
+#leaveForm input[type="text"],
+#leaveForm input[type="number"],
+#leaveForm input[type="date"],
+#leaveForm textarea,
+#leaveForm select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+#leaveForm textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit button styling */
+#leaveForm button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#leaveForm button:hover {
+    background-color: #555;
+}
+
+/* Styling for leave applications section */
+#leaveApplications {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: #ccc;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

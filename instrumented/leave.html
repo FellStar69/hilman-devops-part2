@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="css/leave.css">
+</head>
+
+<body>
+    <h1>Leave Application</h1>
+
+    <!-- Leave Application Form Container -->
+    <div id="leaveFormContainer">
+        <form id="leaveForm">
+            <label for="classID">Class ID:</label>
+            <select id="classID" name="classID" required onchange="updateStudentDropdown()">
+                <option value="">Select a Class</option>
+            </select>
+
+            <label for="studentID">Student ID:</label>
+            <select id="studentID" name="studentID" required onchange="displayStudentInfo()">
+                <option value="">Select a Student</option>
+            </select>
+
+            <div id="studentInfo"></div> <!-- Section to display student information -->
+
+            <label for="leaveDate">Leave Date:</label>
+            <input type="date" id="leaveDate" name="leaveDate" required />
+
+            <label for="reason">Reason:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <button type="button" onclick="submitLeaveApplication()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Section to Display Leave Applications -->
+    <h2>Submitted Leave Applicationns</h2>
+    <div id="leaveApplications"></div>
+
+    <!-- JavaScript for leave application functions -->
+    <script src="leave.js"></script>
+</body>
+
+</html>
