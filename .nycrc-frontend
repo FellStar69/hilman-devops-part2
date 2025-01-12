@@ -4,7 +4,7 @@
         "html"
     ],
     "include": [
-        "public/js/leave.js"
+        "public/*.js"
     ],
     "reportDir": "coverage/frontend",
     "check-coverage": true,
