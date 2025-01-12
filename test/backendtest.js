@@ -11,7 +11,7 @@ describe('Leave Application API', () => {
   // Set up server before tests start and tear it down after tests complete
   before(async () => {
     const { address, port } = await server.address();
-    baseUrl = `http://${address == '::' ? 'localhost' : address}:${port}`;
+    baseUrl = `http://localhost:${port}`;
   });
 
   after(() => {

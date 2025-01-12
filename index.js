@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // Import leave application routes from leaveapp.js
-const leaveAppRoutes = require("./util/leaveapp");
+const leaveAppRoutes = require("./public/leaveapp");
 app.use("/leave", leaveAppRoutes);
 
 // Serve search.js from the util directory
