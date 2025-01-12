@@ -20,7 +20,7 @@ try {
 }
 
 // Initialize leaveApplications
-let leaveApplications = data.leaveApplications || [];
+let leaveApplications = data.leaveApplications
 
 // Route to serve db.json data
 router.get('/api/data', (req, res) => {

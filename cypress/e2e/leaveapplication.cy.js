@@ -165,4 +165,86 @@ describe('Leave Application Frontend', () => {
       });
     });
   });
+  describe('Update Application Status', () => {
+  beforeEach(() => {
+    // Intercept the GET request for fetching leave applications
+    cy.intercept('GET', '/leave/get-leave-applications', {
+      statusCode: 200,
+      body: [
+        {
+          applicationID: 1,
+          studentID: 1,
+          classID: 101,
+          leaveDate: '2024-11-10',
+          reason: 'Medical reasons',
+          status: 'Pending',
+        },
+      ],
+    }).as('getLeaveApplications');
+
+    // Visit the page before each test
+    cy.visit('http://localhost:5050/leave.html');
+    cy.wait('@getLeaveApplications');
+  });
+
+  it('should update the application status to Approved', () => {
+    // Intercept the POST request for updating the status
+    cy.intercept('POST', '/leave/update-application-status', (req) => {
+      // Assert that the correct payload is sent
+      expect(req.body).to.deep.equal({
+        applicationID: 1,
+        status: 'Approved',
+      });
+
+      req.reply({
+        statusCode: 200,
+        body: { message: 'Application approved successfully.' },
+      });
+    }).as('updateStatus');
+
+    // Find the application and click the Approve button
+    cy.contains('Application ID: 1')
+      .parent()
+      .contains('Approve')
+      .click();
+
+    // Wait for the POST request to be made
+    cy.wait('@updateStatus');
+
+    // Assert that the success alert is displayed
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal('Application approved successfully.');
+    });
+  });
+
+  it('should update the application status to Disapproved', () => {
+    // Intercept the POST request for updating the status
+    cy.intercept('POST', '/leave/update-application-status', (req) => {
+      // Assert that the correct payload is sent
+      expect(req.body).to.deep.equal({
+        applicationID: 1,
+        status: 'Disapproved',
+      });
+
+      req.reply({
+        statusCode: 200,
+        body: { message: 'Application disapproved successfully.' },
+      });
+    }).as('updateStatus');
+
+    // Find the application and click the Disapprove button
+    cy.contains('Application ID: 1')
+      .parent()
+      .contains('Disapprove')
+      .click();
+
+    // Wait for the POST request to be made
+    cy.wait('@updateStatus');
+
+    // Assert that the success alert is displayed
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal('Application disapproved successfully.');
+    });
+  });
+  });
 });
