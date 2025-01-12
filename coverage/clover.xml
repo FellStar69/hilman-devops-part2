@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736723042011" clover="3.2.0">
-  <project timestamp="1736723042011" name="All files">
-    <metrics statements="92" coveredstatements="65" conditionals="12" coveredconditionals="2" methods="22" coveredmethods="14" elements="126" coveredelements="81" complexity="0" loc="92" ncloc="92" packages="1" files="2" classes="2"/>
+<coverage generated="1736723638737" clover="3.2.0">
+  <project timestamp="1736723638737" name="All files">
+    <metrics statements="92" coveredstatements="65" conditionals="10" coveredconditionals="1" methods="22" coveredmethods="14" elements="124" coveredelements="80" complexity="0" loc="92" ncloc="92" packages="1" files="2" classes="2"/>
     <file name="leave.js" path="E:\DEVOPS\PART 2\hilman devops part 3 final\public\leave.js">
       <metrics statements="50" coveredstatements="50" conditionals="2" coveredconditionals="1" methods="14" coveredmethods="14"/>
       <line num="3" count="8" type="stmt"/>
@@ -56,7 +56,7 @@
       <line num="115" count="8" type="stmt"/>
     </file>
     <file name="leaveapp.js" path="E:\DEVOPS\PART 2\hilman devops part 3 final\public\leaveapp.js">
-      <metrics statements="42" coveredstatements="15" conditionals="10" coveredconditionals="1" methods="8" coveredmethods="0"/>
+      <metrics statements="42" coveredstatements="15" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -68,7 +68,7 @@
       <line num="16" count="1" type="stmt"/>
       <line num="18" count="0" type="stmt"/>
       <line num="19" count="0" type="stmt"/>
-      <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="23" count="1" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
       <line num="28" count="0" type="stmt"/>
       <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
