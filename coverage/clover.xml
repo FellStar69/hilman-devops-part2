@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736742839418" clover="3.2.0">
-  <project timestamp="1736742839418" name="All files">
-    <metrics statements="50" coveredstatements="50" conditionals="2" coveredconditionals="1" methods="14" coveredmethods="14" elements="66" coveredelements="65" complexity="0" loc="50" ncloc="50" packages="1" files="1" classes="1"/>
+<coverage generated="1736748792710" clover="3.2.0">
+  <project timestamp="1736748792710" name="All files">
+    <metrics statements="49" coveredstatements="49" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14" elements="63" coveredelements="63" complexity="0" loc="49" ncloc="49" packages="1" files="1" classes="1"/>
     <file name="leave.js" path="E:\DEVOPS\PART 2\hilman devops part 3 final\public\leave.js">
-      <metrics statements="50" coveredstatements="50" conditionals="2" coveredconditionals="1" methods="14" coveredmethods="14"/>
+      <metrics statements="49" coveredstatements="49" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14"/>
       <line num="3" count="8" type="stmt"/>
       <line num="4" count="8" type="stmt"/>
       <line num="6" count="8" type="stmt"/>
@@ -30,30 +30,29 @@
       <line num="46" count="2" type="stmt"/>
       <line num="47" count="2" type="stmt"/>
       <line num="48" count="2" type="stmt"/>
-      <line num="50" count="2" type="stmt"/>
-      <line num="51" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="52" count="2" type="stmt"/>
-      <line num="61" count="1" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="54" count="2" type="stmt"/>
       <line num="62" count="1" type="stmt"/>
-      <line num="69" count="1" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
       <line num="75" count="1" type="stmt"/>
       <line num="76" count="1" type="stmt"/>
-      <line num="80" count="12" type="stmt"/>
+      <line num="77" count="1" type="stmt"/>
       <line num="81" count="12" type="stmt"/>
       <line num="82" count="12" type="stmt"/>
       <line num="83" count="12" type="stmt"/>
-      <line num="85" count="12" type="stmt"/>
-      <line num="86" count="58" type="stmt"/>
+      <line num="84" count="12" type="stmt"/>
+      <line num="86" count="12" type="stmt"/>
       <line num="87" count="58" type="stmt"/>
-      <line num="97" count="58" type="stmt"/>
-      <line num="102" count="3" type="stmt"/>
-      <line num="107" count="3" type="stmt"/>
+      <line num="88" count="58" type="stmt"/>
+      <line num="98" count="58" type="stmt"/>
+      <line num="103" count="3" type="stmt"/>
       <line num="108" count="3" type="stmt"/>
       <line num="109" count="3" type="stmt"/>
-      <line num="113" count="8" type="stmt"/>
+      <line num="110" count="3" type="stmt"/>
       <line num="114" count="8" type="stmt"/>
       <line num="115" count="8" type="stmt"/>
+      <line num="116" count="8" type="stmt"/>
     </file>
   </project>
 </coverage>

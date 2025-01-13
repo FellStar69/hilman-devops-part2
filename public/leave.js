@@ -51,9 +51,11 @@ function displayStudentInfo() {
     const student = window.studentData.find(stu => stu.studentID == studentID);
 
     // Render student info or a fallback message if student is not found
-    studentInfo.innerHTML = student
-        ? `<p>Name: ${student.name}</p><p>Student ID: ${student.studentID}</p>`
-        : '<p>Student not found</p>';
+    studentInfo.innerHTML = `
+    <p>Name: ${student.name}</p>
+    <p>Student ID: ${student.studentID}</p>
+`;
+
 }
 
 async function submitLeaveApplication() {
