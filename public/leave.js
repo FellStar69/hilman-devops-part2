@@ -47,14 +47,14 @@ function displayStudentInfo() {
     const studentInfo = document.getElementById('studentInfo');
     studentInfo.innerHTML = ''; // Reset info
 
+    // Find the student
     const student = window.studentData.find(stu => stu.studentID == studentID);
-    if (student) {
-        studentInfo.innerHTML = `
-            <p>Name: ${student.name}</p>
-            <p>Student ID: ${student.studentID}</p>
-            <!-- Add more details if available in the data -->
-        `;
-    }
+
+    // Use short-circuit evaluation to display student information if found
+    studentInfo.innerHTML = student ? `
+        <p>Name: ${student.name}</p>
+        <p>Student ID: ${student.studentID}</p>
+    ` : '<p>Student not found</p>';
 }
 
 async function submitLeaveApplication() {

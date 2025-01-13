@@ -99,6 +99,7 @@ describe('Leave Application Frontend', () => {
       // Assert that the alert was called with the success message
       cy.get('@alertStub').should('have.been.calledWith', 'Leave application submitted successfully!');
     });
+    
   });
 
   describe('Leave Application Management', () => {
