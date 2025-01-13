@@ -150,6 +150,14 @@
       "leaveDate": "2024-12-10",
       "reason": "Sick",
       "status": "Pending"
+    },
+    {
+      "applicationID": 10,
+      "studentID": 1,
+      "classID": 101,
+      "leaveDate": "2024-12-10",
+      "reason": "Sick",
+      "status": "Pending"
     }
   ]
 }
