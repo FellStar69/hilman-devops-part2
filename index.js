@@ -3,6 +3,9 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
+const Sentry = require("@sentry/node");
+
+require("./instrument.js");
 
 const app = express();
 const PORT = process.env.PORT || 5050;
