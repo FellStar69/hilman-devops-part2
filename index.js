@@ -23,6 +23,9 @@ app.get("/util/search.js", (req, res) => {
   res.sendFile(path.join(__dirname, "util", "search.js"));
 });
 
+const statusMonitor = require('express-status-monitor');
+app.use(statusMonitor());
+
 // Serve db.json from the data directory
 app.get("/data/db.json", (req, res) => {
   res.sendFile(dbPath);
